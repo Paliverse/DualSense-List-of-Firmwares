@@ -7,7 +7,7 @@ Firmware 0x0307 download link: https://fwupdater.dl.playstation.net/fwupdater/fw
 
 
 
-## Sony Firmware Updater Tool Link: 
+## Sony Firmware Updater Tool
 https://controller.dl.playstation.net/controller/lang/en/fwupdater.html
 
 
