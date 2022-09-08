@@ -3,6 +3,8 @@ Attached are the official Firmwares from the Sony Firmware Updater Tool
 
 Firmware 0x0297 download link: https://fwupdater.dl.playstation.net/fwupdater/fwupdate0004/0x0297/FWUPDATE0004.bin
 
+Firmware 0x0307 download link: https://fwupdater.dl.playstation.net/fwupdater/fwupdate0004/0x0307/FWUPDATE0004.bin
+
 Tool Link: https://controller.dl.playstation.net/controller/lang/en/fwupdater.html
 
 
