@@ -1,16 +1,14 @@
 # DualSense-List-of-Firmwares
 Attached are the official Firmwares from the Sony Firmware Updater Tool
-
-
-Firmware 0x0297 download link: (No longer working)
+<h1></h1>
+### Firmware 0x0297 download link:
+(No longer working)
 https://fwupdater.dl.playstation.net/fwupdater/fwupdate0004/0x0297/FWUPDATE0004.bin
 
-Firmware 0x0307 download link: 
+### Firmware 0x0307 download link: 
 https://fwupdater.dl.playstation.net/fwupdater/fwupdate0004/0x0307/FWUPDATE0004.bin
 
-
-
-## Sony Firmware Updater Tool
+<h1>Sony Firmware Updater Tool</h1>
 https://controller.dl.playstation.net/controller/lang/en/fwupdater.html
 
 
