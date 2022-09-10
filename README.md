@@ -3,7 +3,7 @@ Attached are the official Firmwares from the Sony Firmware Updater Tool
 <h1></h1>
 
 ### Firmware 0x0297 download link: 
-(No longer working)
+<h5>(No longer working)</h5>
 https://fwupdater.dl.playstation.net/fwupdater/fwupdate0004/0x0297/FWUPDATE0004.bin
 
 ### Firmware 0x0307 download link: 
