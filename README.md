@@ -1,5 +1,5 @@
 # DualSense-List-of-Firmwares
-Attached are the official Firmwares from the Sony Firmware Updater Tool
+Attached are the official Firmware .bin files from the Sony Firmware Updater Tool
 <h1></h1>
 
 ### Firmware 0x0113 for the DualSense Edge download link: 
