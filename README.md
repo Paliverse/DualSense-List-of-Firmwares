@@ -2,7 +2,7 @@
 Attached are the official Firmware .bin files from the Sony Firmware Updater Tool
 <h1></h1>
 
-### DS Edge:
+### DualSense Edge:
 #### Firmware 0x0113 for the DualSense Edge download link: 
 https://fwupdater.dl.playstation.net/fwupdater/fwupdate0044/0x0113/FWUPDATE0044.bin
 
@@ -10,7 +10,8 @@ https://fwupdater.dl.playstation.net/fwupdater/fwupdate0044/0x0113/FWUPDATE0044.
 #### Firmware 0x0356 for the normal DualSense download link: 
 https://fwupdater.dl.playstation.net/fwupdater/fwupdate0004/0x0356/FWUPDATE0004.bin
 
-#### Firmware 0x0307 download link: 
+#### Firmware 0x0307 download link:
+<h5>NOTE: (Link No longer working) Download the repo to get the file</h5>
 https://fwupdater.dl.playstation.net/fwupdater/fwupdate0004/0x0307/FWUPDATE0004.bin
 
 #### Firmware 0x0297 download link: 
