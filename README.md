@@ -13,6 +13,8 @@ Attached are the official Firmware .bin files from the Sony Firmware Updater Too
 ## DualSense:
  - Firmware 0x0520 (FWUPDATE0004) (Latest) download link:
    - [https://fwupdater.dl.playstation.net/fwupdater/fwupdate0004/0x0520/FWUPDATE0004.bin](https://fwupdater.dl.playstation.net/fwupdater/fwupdate0004/0x0520/FWUPDATE0004.bin)
+ - Firmware 0x0520 (FWUPDATE000B) (Latest) download link:
+   - [https://fwupdater.dl.playstation.net/fwupdater/fwupdate000B/0x0520/FWUPDATE000B.bin](https://fwupdater.dl.playstation.net/fwupdater/fwupdate000B/0x0520/FWUPDATE000B.bin)
   #
  - Firmware 0x0520 in the [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0520)
  - Firmware 0x0458 in the [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0458)
