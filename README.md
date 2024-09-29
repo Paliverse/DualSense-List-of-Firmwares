@@ -1,5 +1,5 @@
 # DualSense-List-of-Firmwares
-Attached are the official Firmware .bin files from the Sony Firmware Updater Tool
+Attached are the official Firmware .bin files from the Firmware Updater Tool on PC.
 
 ## DualSense Edge:
 - Firmware 0x0200 (Latest) for the DualSense Edge download link: 
@@ -16,6 +16,7 @@ Attached are the official Firmware .bin files from the Sony Firmware Updater Too
  - Firmware 0x0520 (FWUPDATE000B) (Latest) download link:
    - [https://fwupdater.dl.playstation.net/fwupdater/fwupdate000B/0x0520/FWUPDATE000B.bin](https://fwupdater.dl.playstation.net/fwupdater/fwupdate000B/0x0520/FWUPDATE000B.bin)
   #
+ - Firmware 0x0520 (B) in the [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0520%20(B))
  - Firmware 0x0520 in the [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0520)
  - Firmware 0x0458 in the [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0458)
  - Firmware 0x0402 in the [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0402)
