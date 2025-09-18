@@ -21,11 +21,11 @@ Attached are the official Firmware .bin files from the Firmware Updater Tool on 
  - Firmware 0x0630 (A) in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0630)
  - Firmware 0x0520 (B) in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0520%20(B))
  - Firmware 0x0520 (A) in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0520)
- - Firmware 0x0458 in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0458)
- - Firmware 0x0402 in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0402)
- - Firmware 0x0356 in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0356)
- - Firmware 0x0307 in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0307)
- - Firmware 0x0297 in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0297)
+ - Firmware 0x0458 (A?)  in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0458)
+ - Firmware 0x0402 (A?)  in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0402)
+ - Firmware 0x0356 (A?)  in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0356)
+ - Firmware 0x0307 (A?)  in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0307)
+ - Firmware 0x0297 (A?)  in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0297)
 ## PlayStation® Accessories:
 [https://controller.dl.playstation.net/controller/lang/en/fwupdater.html](https://controller.dl.playstation.net/controller/lang/en/2100004.html)
 
