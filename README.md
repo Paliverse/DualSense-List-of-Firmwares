@@ -1,4 +1,4 @@
-# DualSense-List-of-Firmwares
+# DualSense/DS Edge Firmwares
 Attached are the official Firmware .bin files from the Firmware Updater Tool on PC.
 
 ## DualSense Edge:
