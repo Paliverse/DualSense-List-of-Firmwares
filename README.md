@@ -5,31 +5,31 @@ Attached are the official Firmware .bin files from the Firmware Updater Tool on 
 - Firmware 0x0217 (Latest) for the DualSense Edge download link: 
    - [https://fwupdater.dl.playstation.net/fwupdater/fwupdate0044/0x0217/FWUPDATE0044.bin](https://fwupdater.dl.playstation.net/fwupdater/fwupdate0044/0x0217/FWUPDATE0044.bin)
  #
-- Firmware 0x0217 in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20Edge%20FW%20Files/Firmware%200x0217)
-- Firmware 0x0213 in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20Edge%20FW%20Files/Firmware%200x0213)
-- Firmware 0x0200 in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20Edge%20FW%20Files/Firmware%200x0200)
-- Firmware 0x0180 in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20Edge%20FW%20Files/Firmware%200x0180)
-- Firmware 0x0154 in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20Edge%20FW%20Files/Firmware%200x0154)
-- Firmware 0x0113 in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20Edge%20FW%20Files/Firmware%200x0113)
+- Firmware 0x0217 (Type 00044) in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20Edge%20FW%20Files/Firmware%200x0217)
+- Firmware 0x0213 (Type 00044) in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20Edge%20FW%20Files/Firmware%200x0213)
+- Firmware 0x0200 (Type 00044) in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20Edge%20FW%20Files/Firmware%200x0200)
+- Firmware 0x0180 (Type 00044) in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20Edge%20FW%20Files/Firmware%200x0180)
+- Firmware 0x0154 (Type 00044) in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20Edge%20FW%20Files/Firmware%200x0154)
+- Firmware 0x0113 (Type 00044) in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20Edge%20FW%20Files/Firmware%200x0113)
 
 ## DualSense:
- - Firmware 0x0630 (4) (FWUPDATE0004) (Latest) download link:
+ - Firmware 0x0630 (Type 0004) (FWUPDATE0004) (Latest) download link:
    - [https://fwupdater.dl.playstation.net/fwupdater/fwupdate0004/0x0630/FWUPDATE0004.bin](https://fwupdater.dl.playstation.net/fwupdater/fwupdate0004/0x0630/FWUPDATE0004.bin)
- - Firmware 0x0630 (B) (FWUPDATE000B) (Latest) download link:
+ - Firmware 0x0630 (Type 000B) (FWUPDATE000B) (Latest) download link:
    - [https://fwupdater.dl.playstation.net/fwupdater/fwupdate000B/0x0630/FWUPDATE000B.bin](https://fwupdater.dl.playstation.net/fwupdater/fwupdate000B/0x0630/FWUPDATE000B.bin)
-- Firmware 0x0633 (Type E) (FWUPDATE000E) (Latest) download link:
+- Firmware 0x0633 (Type 000E) (FWUPDATE000E) (Latest) download link:
    - [https://fwupdater.dl.playstation.net/fwupdater/fwupdate000E/0x0633/FWUPDATE000E.bin](https://fwupdater.dl.playstation.net/fwupdater/fwupdate000E/0x0633/FWUPDATE000E.bin)
   #
- - Firmware 0x0633 (Type E) in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0633)
- - Firmware 0x0630 (Type B) in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0630%20(B))
- - Firmware 0x0630 (Type 4) in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0630)
- - Firmware 0x0520 (Type B) in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0520%20(B))
- - Firmware 0x0520 (Type 4) in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0520)
- - Firmware 0x0458 (Type 4)  in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0458)
- - Firmware 0x0402 (Type 4)  in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0402)
- - Firmware 0x0356 (Type 4)  in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0356)
- - Firmware 0x0307 (Type 4)  in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0307)
- - Firmware 0x0297 (Type 4)  in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0297)
+ - Firmware 0x0633 (Type 000E) in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0633)
+ - Firmware 0x0630 (Type 000B) in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0630%20(B))
+ - Firmware 0x0630 (Type 0004) in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0630)
+ - Firmware 0x0520 (Type 000B) in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0520%20(B))
+ - Firmware 0x0520 (Type 0004) in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0520)
+ - Firmware 0x0458 (Type 0004)  in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0458)
+ - Firmware 0x0402 (Type 0004)  in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0402)
+ - Firmware 0x0356 (Type 0004)  in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0356)
+ - Firmware 0x0307 (Type 0004)  in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0307)
+ - Firmware 0x0297 (Type 0004)  in [REPO](https://github.com/Paliverse/DualSense-List-of-Firmwares/tree/main/FW%20Files/DualSense%20FW%20Files/Firmware%200x0297)
 
 ## PlayStation® Accessories:
 [https://controller.dl.playstation.net/controller/lang/en/fwupdater.html](https://controller.dl.playstation.net/controller/lang/en/2100004.html)
