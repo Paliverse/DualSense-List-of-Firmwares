@@ -45,7 +45,8 @@ GitHub Actions also runs this check daily at 12:00 UTC and can be triggered manu
 
 | Version | Variant | Updater | Status | File | Official URL | SHA256 |
 |---|---|---|---|---|---|---|
-| `0x0633` | Type 000E | `FWUPDATE000E` | Latest | [FWUPDATE000E.bin](firmware/dualsense/0x0633/FWUPDATE000E.bin) | [Download](https://fwupdater.dl.playstation.net/fwupdater/fwupdate000E/0x0633/FWUPDATE000E.bin) | `EC5734DA8F4F658288CA45C51A19430C66DA89C797C7DF6C1372B6F5C5806CFF` |
+| `0x0641` | Type 000E | `FWUPDATE000E` | Latest | [FWUPDATE000E.bin](firmware/dualsense/0x0641/FWUPDATE000E.bin) | [Download](https://fwupdater.dl.playstation.net/fwupdater/fwupdate000E/0x0641/FWUPDATE000E.bin) | `B9C217D8DED5F09F03034E7E5037AF0C174C3C77A3CBD201EE5FD219EE448FC8` |
+| `0x0633` | Type 000E | `FWUPDATE000E` | Archived | [FWUPDATE000E.bin](firmware/dualsense/0x0633/FWUPDATE000E.bin) | [Download](https://fwupdater.dl.playstation.net/fwupdater/fwupdate000E/0x0633/FWUPDATE000E.bin) | `EC5734DA8F4F658288CA45C51A19430C66DA89C797C7DF6C1372B6F5C5806CFF` |
 | `0x0630` | Type 0004 | `FWUPDATE0004` | Latest | [FWUPDATE0004.bin](firmware/dualsense/0x0630/FWUPDATE0004.bin) | [Download](https://fwupdater.dl.playstation.net/fwupdater/fwupdate0004/0x0630/FWUPDATE0004.bin) | `861AD95A99B16805FF20F5690372988662C4F69C6AD0B266E793D7FC2292315A` |
 | `0x0630` | Type 000B | `FWUPDATE000B` | Latest | [FWUPDATE000B.bin](firmware/dualsense/0x0630/FWUPDATE000B.bin) | [Download](https://fwupdater.dl.playstation.net/fwupdater/fwupdate000B/0x0630/FWUPDATE000B.bin) | `B66528795683D214CA06FE4672D298DE75BF019BD5046442CBEC63FC02974F86` |
 | `0x0520` | Type 0004 | `FWUPDATE0004` | Archived | [FWUPDATE0004.bin](firmware/dualsense/0x0520/FWUPDATE0004.bin) | [Download](https://fwupdater.dl.playstation.net/fwupdater/fwupdate0004/0x0520/FWUPDATE0004.bin) | `5ECB23A0C6750C2026CB136A1D284AE5998833AB12138A5F144B53A9AA76CEF5` |
