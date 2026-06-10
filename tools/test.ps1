@@ -2,6 +2,8 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
 $repoRoot = Split-Path -Parent $PSScriptRoot
+. (Join-Path $PSScriptRoot 'common.ps1')
+
 $requiredFiles = @(
     'devices.json',
     'firmwares.json',
@@ -17,6 +19,18 @@ foreach ($relativePath in $requiredFiles) {
     if (-not (Test-Path -LiteralPath $fullPath)) {
         throw "Missing required project file: $relativePath"
     }
+}
+
+$sortRegressionEntries = New-Object System.Collections.Generic.List[object]
+$sortRegressionEntries.Add([pscustomobject]@{
+    device = 'dualsense'
+    version = '0x0001'
+    variant = 'A'
+    updaterId = 'FWUPDATE0004'
+}) | Out-Null
+$sortedRegressionEntries = @(Sort-FirmwareEntries -Entries $sortRegressionEntries.ToArray())
+if ($sortedRegressionEntries.Count -ne 1 -or $sortedRegressionEntries[0].version -ne '0x0001') {
+    throw 'Sort-FirmwareEntries failed to handle generic list input.'
 }
 
 & (Join-Path $PSScriptRoot 'validate.ps1')

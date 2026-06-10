@@ -153,7 +153,7 @@ $updatedEntries.Add($newEntry) | Out-Null
 
 $newMetadata = [pscustomobject][ordered]@{
     schemaVersion = 1
-    firmwares = @(Sort-FirmwareEntries -Entries @($updatedEntries))
+    firmwares = @(Sort-FirmwareEntries -Entries $updatedEntries.ToArray())
 }
 Write-JsonFile -Path $firmwaresPath -Value $newMetadata
 
