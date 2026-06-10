@@ -9,19 +9,19 @@
       "variants": [
         {
           "id": "A",
-          "label": "DualSense A",
+          "label": "Type 0004",
           "updaterPath": "fwupdate0004",
           "updaterId": "FWUPDATE0004"
         },
         {
           "id": "B",
-          "label": "DualSense B",
+          "label": "Type 000B",
           "updaterPath": "fwupdate000B",
           "updaterId": "FWUPDATE000B"
         },
         {
           "id": "E",
-          "label": "DualSense E / Unknown",
+          "label": "Type 000E",
           "updaterPath": "fwupdate000E",
           "updaterId": "FWUPDATE000E"
         }
@@ -34,7 +34,7 @@
       "variants": [
         {
           "id": "default",
-          "label": "DualSense Edge",
+          "label": "Type 0044",
           "updaterPath": "fwupdate0044",
           "updaterId": "FWUPDATE0044"
         }

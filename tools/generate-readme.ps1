@@ -19,10 +19,10 @@ function Get-DisplayVariant {
     )
 
     if ($Variant.id -eq 'default') {
-        return '-'
+        return $Variant.label
     }
 
-    return $Variant.id
+    return $Variant.label
 }
 
 $repoRoot = Get-RepositoryRoot
