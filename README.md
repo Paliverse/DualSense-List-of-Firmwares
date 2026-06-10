@@ -10,7 +10,8 @@ Official firmware `.bin` archive for PlayStation controllers. The firmware files
 
 | Version | Status | File | Official URL | SHA256 |
 |---|---|---|---|---|
-| `0x0633` | Latest | [FWUPDATE000E.bin](firmware/dualsense/0x0633/FWUPDATE000E.bin) | [Download](https://fwupdater.dl.playstation.net/fwupdater/fwupdate000E/0x0633/FWUPDATE000E.bin) | `EC5734DA8F4F658288CA45C51A19430C66DA89C797C7DF6C1372B6F5C5806CFF` |
+| `0x0641` | Latest | [FWUPDATE000E.bin](firmware/dualsense/0x0641/FWUPDATE000E.bin) | [Download](https://fwupdater.dl.playstation.net/fwupdater/fwupdate000E/0x0641/FWUPDATE000E.bin) | `B9C217D8DED5F09F03034E7E5037AF0C174C3C77A3CBD201EE5FD219EE448FC8` |
+| `0x0633` | Archived | [FWUPDATE000E.bin](firmware/dualsense/0x0633/FWUPDATE000E.bin) | [Download](https://fwupdater.dl.playstation.net/fwupdater/fwupdate000E/0x0633/FWUPDATE000E.bin) | `EC5734DA8F4F658288CA45C51A19430C66DA89C797C7DF6C1372B6F5C5806CFF` |
 
 ### Type 0004 / FWUPDATE0004
 

@@ -3,6 +3,17 @@
   "firmwares": [
     {
       "device": "dualsense",
+      "version": "0x0641",
+      "variant": "E",
+      "updaterId": "FWUPDATE000E",
+      "file": "firmware/dualsense/0x0641/FWUPDATE000E.bin",
+      "sourceUrl": "https://fwupdater.dl.playstation.net/fwupdater/fwupdate000E/0x0641/FWUPDATE000E.bin",
+      "sha256": "B9C217D8DED5F09F03034E7E5037AF0C174C3C77A3CBD201EE5FD219EE448FC8",
+      "size": 950272,
+      "latest": true
+    },
+    {
+      "device": "dualsense",
       "version": "0x0633",
       "variant": "E",
       "updaterId": "FWUPDATE000E",
@@ -10,7 +21,7 @@
       "sourceUrl": "https://fwupdater.dl.playstation.net/fwupdater/fwupdate000E/0x0633/FWUPDATE000E.bin",
       "sha256": "EC5734DA8F4F658288CA45C51A19430C66DA89C797C7DF6C1372B6F5C5806CFF",
       "size": 950272,
-      "latest": true
+      "latest": false
     },
     {
       "device": "dualsense",
