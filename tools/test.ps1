@@ -36,6 +36,20 @@ if ($sortedRegressionEntries.Count -ne 1 -or $sortedRegressionEntries[0].version
 & (Join-Path $PSScriptRoot 'validate.ps1')
 & (Join-Path $PSScriptRoot 'generate-readme.ps1') -Check
 
+$readme = Get-Content -LiteralPath (Join-Path $repoRoot 'README.md') -Raw
+$dualSenseIndex = $readme.IndexOf('## DualSense')
+$addingIndex = $readme.IndexOf('## Adding firmware')
+$type000EIndex = $readme.IndexOf('### Type 000E / FWUPDATE000E')
+if ($dualSenseIndex -lt 0 -or $addingIndex -lt 0 -or $type000EIndex -lt 0) {
+    throw 'README.md is missing expected firmware or maintenance sections.'
+}
+if ($addingIndex -lt $dualSenseIndex) {
+    throw 'README maintenance instructions should appear after firmware tables.'
+}
+if ($readme.Contains('| Version | Variant | Updater | Status | File | Official URL | SHA256 |')) {
+    throw 'README firmware tables should be split by variant instead of repeating Variant and Updater columns.'
+}
+
 $testInfoPath = Join-Path $repoRoot '.test-fwupdater-info.json'
 try {
     $testInfo = @{

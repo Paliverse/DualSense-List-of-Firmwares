@@ -25,6 +25,15 @@ function Get-DisplayVariant {
     return $Variant.label
 }
 
+function Get-VariantMaxVersion {
+    param(
+        [Parameter(Mandatory = $true)]
+        [object[]]$Entries
+    )
+
+    return (($Entries | ForEach-Object { Get-VersionNumber -Version $_.version } | Measure-Object -Maximum).Maximum)
+}
+
 $repoRoot = Get-RepositoryRoot
 $config = Read-JsonFile -Path (Join-Path $repoRoot 'devices.json')
 $metadata = Read-JsonFile -Path (Join-Path $repoRoot 'firmwares.json')
@@ -36,6 +45,62 @@ Add-Line
 Add-Line 'Official firmware `.bin` archive for PlayStation controllers. The firmware files are stored in `firmware/`, while device URL patterns and archived firmware metadata live in JSON files.'
 Add-Line
 Add-Line '> This README is generated from `devices.json` and `firmwares.json`. Run `.\tools\generate-readme.ps1` after metadata changes.'
+
+foreach ($device in @($config.devices)) {
+    $deviceEntries = @($entries | Where-Object { $_.device -eq $device.id } | Sort-Object `
+        @{ Expression = { Get-VersionNumber -Version $_.version }; Descending = $true }, `
+        @{ Expression = { $_.variant }; Ascending = $true }, `
+        @{ Expression = { $_.updaterId }; Ascending = $true })
+
+    if ($deviceEntries.Count -eq 0) {
+        continue
+    }
+
+    Add-Line
+    Add-Line "## $($device.name)"
+
+    $variantGroups = @($deviceEntries | Group-Object -Property variant | Sort-Object `
+        @{ Expression = { Get-VariantMaxVersion -Entries @($_.Group) }; Descending = $true }, `
+        @{ Expression = { $_.Name }; Ascending = $true })
+
+    foreach ($variantGroup in $variantGroups) {
+        $variant = Get-VariantConfig -Device $device -VariantId $variantGroup.Name
+        $variantEntries = @($variantGroup.Group | Sort-Object `
+            @{ Expression = { Get-VersionNumber -Version $_.version }; Descending = $true }, `
+            @{ Expression = { $_.updaterId }; Ascending = $true })
+        $displayVariant = Get-DisplayVariant -Variant $variant
+
+        Add-Line
+        Add-Line ('### {0} / {1}' -f $displayVariant, $variant.updaterId)
+        Add-Line
+        Add-Line '| Version | Status | File | Official URL | SHA256 |'
+        Add-Line '|---|---|---|---|---|'
+
+        foreach ($entry in $variantEntries) {
+            $status = if ([bool]$entry.latest) { 'Latest' } else { 'Archived' }
+            Add-Line ('| `{0}` | {1} | [{2}.bin]({3}) | [Download]({4}) | `{5}` |' -f $entry.version, $status, $entry.updaterId, $entry.file, $entry.sourceUrl, $entry.sha256)
+        }
+    }
+}
+
+Add-Line
+Add-Line '## Metadata'
+Add-Line
+Add-Line '- `devices.json` defines supported devices, variants, updater IDs, and URL patterns.'
+Add-Line '- `firmwares.json` lists every archived firmware file, source URL, SHA256 hash, size, and latest flag.'
+Add-Line '- `.\tools\validate.ps1` verifies metadata, files, hashes, sizes, generated URLs, and untracked `.bin` files under `firmware/`.'
+Add-Line
+Add-Line '## Device URL patterns'
+Add-Line
+Add-Line '| Device | Variant | Updater path | Updater ID |'
+Add-Line '|---|---|---|---|'
+
+foreach ($device in @($config.devices)) {
+    foreach ($variant in @($device.variants)) {
+        Add-Line ('| {0} | {1} | `{2}` | `{3}` |' -f $device.name, $variant.label, $variant.updaterPath, $variant.updaterId)
+    }
+}
+
 Add-Line
 Add-Line '## Adding firmware'
 Add-Line
@@ -64,48 +129,6 @@ Add-Line '.\tools\check-updates.ps1 -Apply'
 Add-Line '```'
 Add-Line
 Add-Line 'GitHub Actions also runs this check daily at 12:00 UTC and can be triggered manually. When updates are found, the workflow downloads them, updates metadata, regenerates this README, validates the repository, and opens a pull request.'
-Add-Line
-Add-Line '## Device URL patterns'
-Add-Line
-Add-Line '| Device | Variant | Updater path | Updater ID |'
-Add-Line '|---|---|---|---|'
-
-foreach ($device in @($config.devices)) {
-    foreach ($variant in @($device.variants)) {
-        Add-Line ('| {0} | {1} | `{2}` | `{3}` |' -f $device.name, $variant.label, $variant.updaterPath, $variant.updaterId)
-    }
-}
-
-foreach ($device in @($config.devices)) {
-    $deviceEntries = @($entries | Where-Object { $_.device -eq $device.id } | Sort-Object `
-        @{ Expression = { Get-VersionNumber -Version $_.version }; Descending = $true }, `
-        @{ Expression = { $_.variant }; Ascending = $true }, `
-        @{ Expression = { $_.updaterId }; Ascending = $true })
-
-    if ($deviceEntries.Count -eq 0) {
-        continue
-    }
-
-    Add-Line
-    Add-Line "## $($device.name)"
-    Add-Line
-    Add-Line '| Version | Variant | Updater | Status | File | Official URL | SHA256 |'
-    Add-Line '|---|---|---|---|---|---|---|'
-
-    foreach ($entry in $deviceEntries) {
-        $variant = Get-VariantConfig -Device $device -VariantId $entry.variant
-        $displayVariant = Get-DisplayVariant -Variant $variant
-        $status = if ([bool]$entry.latest) { 'Latest' } else { 'Archived' }
-        Add-Line ('| `{0}` | {1} | `{2}` | {3} | [{2}.bin]({4}) | [Download]({5}) | `{6}` |' -f $entry.version, $displayVariant, $entry.updaterId, $status, $entry.file, $entry.sourceUrl, $entry.sha256)
-    }
-}
-
-Add-Line
-Add-Line '## Metadata'
-Add-Line
-Add-Line '- `devices.json` defines supported devices, variants, updater IDs, and URL patterns.'
-Add-Line '- `firmwares.json` lists every archived firmware file, source URL, SHA256 hash, size, and latest flag.'
-Add-Line '- `.\tools\validate.ps1` verifies metadata, files, hashes, sizes, generated URLs, and untracked `.bin` files under `firmware/`.'
 Add-Line
 Add-Line '## PlayStation Accessories'
 Add-Line
