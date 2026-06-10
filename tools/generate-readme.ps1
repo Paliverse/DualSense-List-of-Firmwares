@@ -42,7 +42,7 @@ $lines = New-Object System.Collections.Generic.List[string]
 
 Add-Line '# DualSense / DualSense Edge Firmwares'
 Add-Line
-Add-Line 'Official firmware `.bin` archive for PlayStation controllers. The firmware files are stored in `firmware/`, while device URL patterns and archived firmware metadata live in JSON files.'
+Add-Line 'Official firmware `.bin` archive for PlayStation controllers. The firmware files are stored by device, type, and version under `firmware/`, while device URL patterns and archived firmware metadata live in JSON files.'
 Add-Line
 Add-Line '> This README is generated from `devices.json` and `firmwares.json`. Run `.\tools\generate-readme.ps1` after metadata changes.'
 
@@ -110,7 +110,7 @@ Add-Line '```powershell'
 Add-Line '.\tools\add-firmware.ps1'
 Add-Line '```'
 Add-Line
-Add-Line 'The helper reads `devices.json`, asks for a device, variant, and version, builds the official Sony download URL, downloads the `.bin`, stores it under `firmware/<device>/<version>/`, updates `firmwares.json`, regenerates this README, and runs validation.'
+Add-Line 'The helper reads `devices.json`, asks for a device, variant, and version, builds the official Sony download URL, downloads the `.bin`, stores it under `firmware/<device>/<type>/<version>/`, updates `firmwares.json`, regenerates this README, and runs validation.'
 Add-Line
 Add-Line 'To add a new device or updater variant, add it to `devices.json`; the scripts will show it in the menu automatically.'
 Add-Line

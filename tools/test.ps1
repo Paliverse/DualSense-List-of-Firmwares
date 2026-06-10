@@ -36,6 +36,13 @@ if ($sortedRegressionEntries.Count -ne 1 -or $sortedRegressionEntries[0].version
 & (Join-Path $PSScriptRoot 'validate.ps1')
 & (Join-Path $PSScriptRoot 'generate-readme.ps1') -Check
 
+$metadata = Get-Content -LiteralPath (Join-Path $repoRoot 'firmwares.json') -Raw | ConvertFrom-Json
+foreach ($firmware in @($metadata.firmwares)) {
+    if ($firmware.file -notmatch '^firmware/[^/]+/type-[^/]+/0x[0-9A-F]{4}/FWUPDATE[0-9A-F]+\.bin$') {
+        throw "Firmware file path should include device, type, version, and bin filename: $($firmware.file)"
+    }
+}
+
 $readme = Get-Content -LiteralPath (Join-Path $repoRoot 'README.md') -Raw
 $dualSenseIndex = $readme.IndexOf('## DualSense')
 $addingIndex = $readme.IndexOf('## Adding firmware')
@@ -67,6 +74,9 @@ try {
     }
     if ($updates[0].device -ne 'dualsense' -or $updates[0].variant -ne 'E' -or $updates[0].version -ne '0xFFFF') {
         throw "Unexpected update detected: $($updates[0] | ConvertTo-Json -Compress)"
+    }
+    if ($updates[0].file -ne 'firmware/dualsense/type-000E/0xFFFF/FWUPDATE000E.bin') {
+        throw "Unexpected update file path: $($updates[0].file)"
     }
 } finally {
     if (Test-Path -LiteralPath $testInfoPath) {

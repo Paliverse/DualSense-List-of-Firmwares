@@ -154,7 +154,12 @@ function Get-FirmwareRelativePath {
     )
 
     $normalizedVersion = Normalize-FirmwareVersion -Version $Version
-    return "firmware/$($Device.path)/$normalizedVersion/$($Variant.updaterId).bin"
+    $variantPath = Get-JsonProperty -Object $Variant -Name 'path' -Default $null
+    if ([string]::IsNullOrWhiteSpace($variantPath)) {
+        throw "Variant '$($Variant.id)' for device '$($Device.id)' is missing a path in devices.json."
+    }
+
+    return "firmware/$($Device.path)/$variantPath/$normalizedVersion/$($Variant.updaterId).bin"
 }
 
 function ConvertTo-NativePath {

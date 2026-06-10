@@ -10,18 +10,21 @@
         {
           "id": "A",
           "label": "Type 0004",
+          "path": "type-0004",
           "updaterPath": "fwupdate0004",
           "updaterId": "FWUPDATE0004"
         },
         {
           "id": "B",
           "label": "Type 000B",
+          "path": "type-000B",
           "updaterPath": "fwupdate000B",
           "updaterId": "FWUPDATE000B"
         },
         {
           "id": "E",
           "label": "Type 000E",
+          "path": "type-000E",
           "updaterPath": "fwupdate000E",
           "updaterId": "FWUPDATE000E"
         }
@@ -35,6 +38,7 @@
         {
           "id": "default",
           "label": "Type 0044",
+          "path": "type-0044",
           "updaterPath": "fwupdate0044",
           "updaterId": "FWUPDATE0044"
         }
